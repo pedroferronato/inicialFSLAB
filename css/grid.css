@@ -88,3 +88,41 @@ section div{
 .ativo {
     background-color: #333333 !important;
 }
+
+i {
+    font-size: 36px !important;
+    color: #117A25;
+    vertical-align: middle;
+}
+
+.topoBusca {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topoBusca div {
+    display: inline;
+}
+
+.campoBusca {
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #117A25;
+    text-indent: 4px;
+    padding-bottom: 4px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    color: #A0A0A0;
+    font-size: 16px;
+    width: 325px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    color: black;
+}
