@@ -1,0 +1,139 @@
+.imgCard {
+    width: 575px;
+    height: 350px;
+}
+
+.projetos {
+    margin-top: 40px;
+}
+
+.cardTitle {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cardFabrica {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.cardData {
+    font-size: 16px;
+
+    color: #A0A0A0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.flex div{
+    width: 100%;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.cardImg {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width: 1240px){
+    .flex div {
+        width: 575px;
+    }
+    
+    .cardImg {
+        height: 320px;
+    }
+}
+
+.logoImg {
+    width: 80px;
+    height: 80px;
+    display: block;
+    float: right;
+}
+
+.descricaoCard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.descricaoCard div{
+    width: 300px;
+    display: inline-block;
+}
+
+
+.linha {
+    padding-top: 80px;
+    width: auto;
+}
+
+.imgCursos {
+    width: 695px;
+    height: 250px;
+    margin-right: 36px;
+}
+
+@media (max-width: 1240px) {
+    .imgCursos {
+        width: 100%;
+        height: auto;
+        margin-right: 36px;
+    }
+
+    .flexCurso ul {
+        margin-top: 20px;
+    }
+}
+
+.flexCurso {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+}
+
+.flexCurso div{
+    width: 600px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.flexCurso li {
+    padding-bottom: 22px;
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 24px;
+}
+
+.flexCurso ul {
+    margin-left: 20px;
+}
+
+.liFinal {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    margin-top: 40px;
+    margin: 40px auto 0 20px;
+    max-width: 1240px;
+}
+
+.podcastDetalhes {
+    margin-bottom: 40px;
+}
+
+.podcastDetalhes a {
+    margin-left: 20PX;
+}
