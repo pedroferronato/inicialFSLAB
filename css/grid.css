@@ -51,11 +51,6 @@ section div{
     float: right;
 }
 
-.cardTitlePod {
-    font-weight: 700;
-    font-size: 18px;
-}
-
 .descricaoCard {
     display: flex;
     flex-wrap: wrap;
