@@ -1,0 +1,128 @@
+.grid4 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px; 
+
+    max-width: 1240px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+section div{
+    width: 100%;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.cardImg {
+    height: 375px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.projetos {
+    margin-top: 40px;
+}
+
+.cardTitle {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cardFabrica {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.cardData {
+    font-size: 16px;
+
+    color: #A0A0A0;
+}
+
+.logoImg {
+    width: 80px;
+    height: 80px;
+    display: block;
+    float: right;
+}
+
+.descricaoCard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.descricaoCard div{
+    width: 500px;
+    display: inline-block;
+}
+
+.paginador {
+    display: flex;
+    margin-left: 20px;
+}
+.paginador a {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+
+    background-color: #117A25;
+    border-radius: 5px;
+
+    min-width: 48px;
+    min-height: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    margin-right: 12px;
+}
+
+.ativo {
+    background-color: #333333 !important;
+}
+
+i {
+    font-size: 36px !important;
+    color: #117A25;
+    vertical-align: middle;
+}
+
+.topoBusca {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topoBusca div {
+    display: inline;
+}
+
+.campoBusca {
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #117A25;
+    text-indent: 4px;
+    padding-bottom: 4px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    color: #A0A0A0;
+    font-size: 16px;
+    width: 325px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    color: black;
+}
