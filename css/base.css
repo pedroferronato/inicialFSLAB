@@ -37,6 +37,12 @@ header {
     margin-right: auto;
 }
 
+@media (max-width: 1280px){
+    .headerContent {
+        padding-left: 20px;
+    }
+}
+
 h1, h3, .navMenu, main, footer {
     max-width: 1240px;
 
