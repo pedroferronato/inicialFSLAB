@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábrica de Software IFRO</title>
-    <link rel="stylesheet" href="./css/principal.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/principal.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link rel="shortcut icon" href="./src/Logotipo_IFET.ico">
 </head>
@@ -35,64 +34,86 @@
         </div>
         <p class="titulo">Projetos</p>
         <p class="Subtitulo">Mais de 20 projetos desenvolvidos</p>
-        <div class="flex">
-            <div>
-                <img class="cardImg" src="./src/dashboard.jpg">
-                <p class="cardTitle">Dashboard para estação meteorológica</p>
-                <div class="descricaoCard">
-                    <div>
-                        <p class="cardFabrica">Fábrica Station</p>
-                        <p class="cardData">Semestre: 2020/1</p>
+
+        <div class="wrap">
+            <div class="row">
+                <div class="card">
+                    <img src="./src/dashboard.jpg">
+                    <div class="descricao">
+                        <strong>Dashboard para Estaçao Meteorologica</strong>
+                        <div class="equipe">
+                            <div class="eTexto">
+                                <p class="nomeEquipe">Fábrica Station</p>
+                                <p class="semestre">Semestre 2020/1</p>
+                            </div>
+                            <img src="../src/logoMeteorologia.png">
+                        </div>
                     </div>
-                    <img class="logoImg" src="./src/logoMeteorologia.png" alt="Logo Meteorologia">
+                </div>
+                <div class="card">
+                    <img src="./src/Encurtador-de-Link.png">
+                    <div class="descricao">
+                        <strong>Encurtador de URL</strong>
+                        <div class="equipe">
+                            <div class="eTexto">
+                                <p class="nomeEquipe">From Software</p>
+                                <p class="semestre">Semestre 2020/1</p>
+                            </div>
+                            <img src="../src/logoURL.PNG">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <img class="cardImg" src="./src/Encurtador-de-Link.png">
-                <p class="cardTitle">Encurtador de URL</p>
-                <div class="descricaoCard">
-                    <div>
-                        <p class="cardFabrica">From Software</p>
-                        <p class="cardData">Semestre: 2019/2</p>
-                    </div>
-                    <img class="logoImg" src="./src/logoURL.PNG" alt="Logo Meteorologia">
+
+        </div>
+
+        <div class="botao">
+            <a href="./pages/projetos.html" class="botaoVerde">Conheça todos os projetos</a>
+        </div>
+
+        <p class="titulo">Cursos da FSLab</p>
+        <p class="Subtitulo">Mais de 40 cursos disponíveis gratuitamente</p>
+        <div class="wrap">
+            <div id="cursos" class="row">
+                <img src="./src/cursos.PNG">
+
+                <div class="lista">
+                    <ul>
+                        <li>Python</li>
+                        <li>Git e GitHub</li>
+                        <li>Prototipação com Figma</li>
+                        <li>Planílhas eletrônicas</li>
+                        <li>Edição de áudio</li>
+                        <li>E muito mais...</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <a href="./pages/projetos.html" class="botaoVerde">Conheça todos os projetos</a>
 
-        <div class="linha">
-            <p class="titulo">Cursos da FSLab</p>
-            <p class="Subtitulo">Mais de 40 cursos disponíveis gratuitamente</p>
-            <div class="flexCurso">
-                <img class="imgCursos" src="./src/cursos.PNG">
-                <ul>
-                    <li>Python</li>
-                    <li>Git e GitHub</li>
-                    <li>Prototipação com Figma</li>
-                    <li>Planílhas eletrônicas</li>
-                    <li>Edição de áudio</li>
-                    <li class="liFinal">E muito mais...</li>
-                </ul>
+        <div class="botao">
+            <a href="https://github.com" class="botaoVerde">Conheça todos os cursos</a>
+        </div>
+
+        <p class="titulo">Ouça nossos podcasts</p>
+        <p class="Subtitulo">Podcasts sobre o mundo de TI e cotidiano do Instituto</p>
+
+        <div class="wrap">
+            <div id="podcast">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/891016483&color=%23117a25&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <div
+                    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/tecnoblog" title="Tecnocast" target="_blank"
+                        style="color: #cccccc; text-decoration: none;">Tecnocast</a> · <a
+                        href="https://soundcloud.com/tecnoblog/160-todo-mundo-quer-o-seu-pix"
+                        title="160 – Todo mundo quer o seu PIX" target="_blank"
+                        style="color: #cccccc; text-decoration: none;">160 – Todo mundo quer o seu PIX</a></div>
             </div>
-            <a href="#" class="botaoVerde">Conheça todos os cursos</a>
         </div>
 
-        <div class="linha">
-            <p class="titulo">Ouça nossos podcasts</p>
-            <p class="Subtitulo">Podcasts sobre o mundo de TI e cotidiano do Instituto</p>
-            <iframe width="100%" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/891016483&color=%23117a25&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
-            <div class="podcastDetalhes"
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/tecnoblog" title="Tecnocast" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Tecnocast</a> · <a
-                    href="https://soundcloud.com/tecnoblog/160-todo-mundo-quer-o-seu-pix"
-                    title="160 – Todo mundo quer o seu PIX" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">160 – Todo mundo quer o seu PIX</a></div>
+        <div class="botao">
+            <a href="./pages/podcast.html" class="botaoVerde">Ouça nossos podcasts</a>
         </div>
-        <a href="./pages/podcast.html" class="botaoVerde">Ouça nossos podcasts</a>
-
 
     </main>
     <footer>
