@@ -6,6 +6,7 @@
 .breadcrumb, .titulo, .Subtitulo, .botaoVerde {
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 40px;
 }
 
 body {
@@ -115,7 +116,7 @@ nav {
     color: #000000;
 
     margin-top: 80px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     padding-bottom: 0;
 }
 

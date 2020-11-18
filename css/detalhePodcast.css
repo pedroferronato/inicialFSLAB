@@ -1,4 +1,4 @@
-.descricao {
+.descricaoPodcast {
     max-width: 1240px;
     padding: 0 20px;
     margin: 32px auto 0 auto;
@@ -9,12 +9,15 @@
     margin-top: 120px;
 }
 
-.tituloSecundario {
-    margin-left: 10px;
-    margin-bottom: 32px;
+.titulo2 {
+    font-weight: 1000;
+    font-size: 22px;
 
-    font-weight: 600;
-    font-size: 28px;
+    color: #000000;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
 }
 
 .recursos {
@@ -47,21 +50,7 @@
     margin-left: 40px;
 }
 
-.recItem2 {
-    display: flex;
-    align-items: center;
-}
-
-.recItem2 img {
-    width: 40px;
-    height: 40px;
-}
-
-.recItem2:not(:first-child) {
-    margin-left: 40px;
-}
-
-.descEsq {
+.descEsquerda {
     min-height: 275px; 
     width: 100%;
     max-width: 50%; 
@@ -77,14 +66,7 @@
     margin-top: 24px;
 }
 
-.tituloProjeto {
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 28px;
-    line-height: 35px;
-}
-
-.descDir {
+.descDireita {
     min-height: 275px; 
     width: 100%;
     max-width: 50%; 
@@ -97,12 +79,12 @@
     line-height: 30px;
 }
 
-.fabrica img {
+.podcastParticipantes img {
     width: 84px;
     height: 84px;
 }
 
-.fabrica {
+.podcastParticipantes {
     display: flex;
     justify-content: space-between;
 }
@@ -113,12 +95,6 @@
     display: flex;
 }
 
-.aluno {
-    width: 50%;
-    min-height: 95px;
-    display: flex;
-    align-items: center;
-}
 
 .a {
     background-color: sandybrown;
@@ -129,17 +105,21 @@
     font-size: 20px;
 }
 
-.funcao {
-    font-size: 16px;
+.participante{
+    width: 50%;
+    min-height: 95px;
+    display: flex;
+    align-items: center;
 }
 
-.aluno img {
+
+.participante img {
     width: 64px;
     height: 64px;
     border-radius: 50%;
     box-shadow: 0px 0px 2px 3px #2F9E41;
 }
 
-.descAluno {
+.descParticipante {
     margin-left: 24px;
 }
