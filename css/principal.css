@@ -3,7 +3,6 @@
 
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 40px;
 }
 
 .row {
@@ -85,14 +84,88 @@ strong {
     line-height: 48px;
 }
 
-#cursos img{
+#cursoDesktop {
     width: 75%;
 }
 
-.titulo {
-    margin-top: 120px;
+#cursoMob {
+    display: none;
 }
 
 .botao {
     margin-top: 48px;
+    margin-bottom: 120px;
+}
+
+.footer div {
+    padding-top: 120px;
+}
+
+@media (max-width: 1024px) {
+    .row {
+        display: block;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .equipe img {
+        width: 72px;
+        height: 72px;
+    }
+
+    #primeiroProjeto {
+        margin-bottom: 40px;
+    }
+
+    .breadcrumb  {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .titulo {
+        margin-top: 24px;
+        margin-bottom: 4px;
+    }
+
+    strong {
+        font-size: 22px;
+    }
+    
+    .nomeEquipe {
+        font-size: 18px;
+    }
+
+    .semestre {
+        font-size: 18px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #cursoDesktop {
+        display: none;
+    }
+
+    #cursoMob {
+        display: inline;
+        width: 100%;
+    }
+
+    .footer div {
+        padding-top: 8px;
+    }
+
+    .botao {
+        margin-top: 40px;
+        margin-bottom: 64px;
+    }
 }

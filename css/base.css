@@ -107,6 +107,7 @@ nav {
 
 .breadcrumb {
     padding-top: 24px;
+    padding-bottom: 80px;
 }
 
 .titulo {
@@ -115,8 +116,7 @@ nav {
 
     color: #000000;
 
-    margin-top: 80px;
-    margin-bottom: 0px;
+    margin-bottom: 8px;
     padding-bottom: 0;
 }
 
@@ -149,3 +149,4 @@ footer p {
     padding: 12px 48px;
     border-radius: 5px;
 }
+
