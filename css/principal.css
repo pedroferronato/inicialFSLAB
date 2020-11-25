@@ -113,6 +113,7 @@ strong {
     .card img {
         width: 100%;
         height: auto;
+        max-height: 600px;
         border-radius: 5px;
     }
 
@@ -169,3 +170,42 @@ strong {
         margin-bottom: 64px;
     }
 }
+
+@media (max-width: 900px) {
+    .card img {
+        height: auto;
+        max-height: 520px;
+    }
+}
+
+@media (max-width: 800px) {
+    .card img {
+        height: auto;
+        max-height: 460px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .card img {
+        height: auto;
+        max-height: 405px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card img {
+        height: auto;
+        max-height: 345px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card img {
+        height: auto;
+        max-height: 285px;
+    }
+}
+
+
+
