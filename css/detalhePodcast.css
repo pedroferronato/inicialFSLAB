@@ -11,43 +11,13 @@
 
 .titulo2 {
     font-weight: 1000;
-    font-size: 22px;
+    font-size: 28px;
 
     color: #000000;
 
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     padding-bottom: 0;
-}
-
-.recursos {
-    margin-top: 120px;
-    margin-left: 10px;
-}
-
-.recItem {
-    display: flex;
-    align-items: center;
-}
-
-.recItem img {
-    width: 64px;
-    height: 64px;
-}
-
-
-.recItem p {
-    margin-left: 4px;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.recursosItens {
-    display: flex;
-}
-
-.recItem:not(:first-child) {
-    margin-left: 40px;
 }
 
 .descEsquerda {
@@ -79,25 +49,10 @@
     line-height: 30px;
 }
 
-.podcastParticipantes img {
-    width: 84px;
-    height: 84px;
-}
-
-.podcastParticipantes {
-    display: flex;
-    justify-content: space-between;
-}
-
 .equipe {
     max-width: 100%;
 
     display: flex;
-}
-
-
-.a {
-    background-color: sandybrown;
 }
 
 .nome {
@@ -111,7 +66,6 @@
     display: flex;
     align-items: center;
 }
-
 
 .participante img {
     width: 64px;
@@ -130,4 +84,87 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
+}
+
+.Subtitulo {
+    padding-bottom: 0px;
+}
+
+.recItens {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recItens img {
+    width: 40px;
+    height: 40px;
+}
+
+.recItens div:not(:first-child) {
+    margin-left: 40px;
+}
+
+@media (max-width: 1023px) {
+    .descricaoPodcast {
+        display: block;
+    }
+
+    .descDireita {
+        border: none;
+        padding: 0px;
+        margin-top: 32px;
+        max-width: 100%;
+        min-height: 0px;
+    }
+
+    .participante {
+        align-self: center;
+    }
+
+    .descEsquerda {
+        border: none;
+        max-width: 100%;
+        padding: 0px;
+        min-height: 0px; 
+    }
+}
+
+@media (max-width: 800px) {
+    .breadcrumb {
+        padding-bottom: 32px;
+    }
+
+    footer div {
+        padding-top: 120px;
+    }
+
+    .wrap {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .equipe {
+        display: block;
+    }
+
+    .recItens {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 24px;
+    }
+
+    .recItens div:not(:first-child) {
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+
+    .recItens div:first-child {
+        margin: 0 auto;
+    }
+
 }
