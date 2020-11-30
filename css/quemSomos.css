@@ -36,9 +36,14 @@
     border-radius: 5px;
     margin-bottom: 8px;
 }
-
-
    
 ::-webkit-scrollbar {
     display: none;
+}
+
+@media (max-width: 800px) {
+    .item {
+        width: 480px;
+        height: 270px;
+    }
 }

@@ -5,6 +5,11 @@
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #carousel {
     margin-top: 120px;
 }
@@ -43,21 +48,7 @@
     display: flex;
 }
 
-.recItem:not(:first-child) {
-    margin-left: 40px;
-}
-
-.recItem2 {
-    display: flex;
-    align-items: center;
-}
-
-.recItem2 img {
-    width: 40px;
-    height: 40px;
-}
-
-.recItem2:not(:first-child) {
+.recursosItens a:not(:first-child) {
     margin-left: 40px;
 }
 
@@ -120,10 +111,6 @@
     align-items: center;
 }
 
-.a {
-    background-color: sandybrown;
-}
-
 .nome {
     font-weight: bolder;
     font-size: 20px;
@@ -142,4 +129,60 @@
 
 .descAluno {
     margin-left: 24px;
+}
+
+.recursosItens a{
+    display: block;
+}
+
+@media (max-width: 1023px) {
+    .descricao {
+        display: block;
+    }
+
+    .descDir {
+        border-left: none;
+        min-height: 0; 
+        width: 100%;
+        max-width: 100%; 
+        padding-left: 0;
+        margin-top: 32px;
+    }
+
+    .descEsq {
+        border-right: none;
+        min-height: 0; 
+        width: 100%;
+        max-width: 100%; 
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .recursosItens {
+        display: block;
+    }
+
+    .recursosItens a:not(:first-child) {
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+
+    .equipe {
+        display: block;
+    }
+    
+    .aluno {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .recursos {
+        margin-top: 32px;
+    }
+    
+    #carousel {
+        margin-top: 32px;
+    }
 }

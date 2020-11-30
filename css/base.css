@@ -150,3 +150,12 @@ footer p {
     border-radius: 5px;
 }
 
+@media (max-width: 800px) {
+    .breadcrumb {
+        padding-bottom: 0px;
+    }
+
+    footer div {
+        padding-top: 120px;
+    }
+}
