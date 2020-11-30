@@ -158,4 +158,8 @@ footer p {
     footer div {
         padding-top: 120px;
     }
+
+    .titulo {
+        margin-top: 32px;
+    }
 }
