@@ -1,0 +1,75 @@
+.infos strong{
+    margin-top: 8px;
+
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.infos {
+    margin-top: 8px;
+
+    font-size: 18px;
+}
+
+.numEp {
+    padding: 20px;
+    background-color: black;
+
+    position: absolute;
+
+    margin-top: 16px;
+    margin-left: 16px;
+
+    border-radius: 5px;
+}
+
+.numEp p, .tituloEp p {
+    color: white;
+}
+
+.tituloEp {
+    padding: 8px;
+
+    background-color: rgba(0, 0, 0, 0.70);
+
+    position: absolute;
+
+    right: 16px;
+    top: 16px;
+
+    border-radius: 5px;
+}
+
+.tituloEp p{
+    font-size: 28px;
+}
+
+.imgdivs {
+    position: relative;
+}
+
+@media (max-width: 550px) {
+    .tituloEp p{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 450px) {
+    .tituloEp p{
+        font-size: 18px;
+    }
+
+    .numEp p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 370px) {
+    .tituloEp p{
+        font-size: 14px;
+    }
+
+    .numEp p{
+        font-size: 14px;
+    }
+}

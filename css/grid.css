@@ -230,6 +230,12 @@ strong {
     }
 }
 
+@media (max-width: 620px) {
+    input[type=text] {
+        width: 90%;
+    }
+}
+
 @media (max-width: 600px) {
     .card img {
         height: auto;
@@ -254,5 +260,11 @@ strong {
 
     input[type=text] {
         width: 87%;
+    }
+}
+
+@media (max-width: 350px) {
+    input[type=text] {
+        width: 85%;
     }
 }
