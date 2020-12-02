@@ -7,25 +7,44 @@
     <title>Quem somos</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/quemSomos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link rel="shortcut icon" href="../src/Logotipo_IFET.ico">
 </head>
 
 <body id="bodyQS">
+    <div id="menu">
+        <div class="barra">
+            <i onclick="abrirMenu()" class="material-icons">close</i>
+
+            <ul class="itensMenu">
+                <li class="itemMenu"><a href="../index.html">Início</a></li>
+                <li class="itemMenu"><a href="../pages/projetos.html">Projetos</a></li>
+                <li class="itemMenu"><a href="https://github.com">Cursos</a></li>
+                <li class="itemMenu"><a href="../pages/podcast.html">Podcast</a></li>
+                <li class="itemMenu"><a href="../pages/quemSomos.html">Quem somos</a></li>
+                <li class="itemMenu"><a href="../pages/contato.html">Fale conosco</a></li>
+            </ul>
+        </div>
+        <div onclick="abrirMenu()" class="fade"></div>
+    </div>
     <header>
         <div class="headerContent">
-            <h1>FSLab</h1>
-            <h3>Laboratório de Fábricas de Software</h3>
+            <i onclick="abrirMenu()" class="material-icons">menu</i>
+            <div class="fslab">
+                <h1>FSLab</h1>
+                <h3>Laboratório de Fábricas de Software</h3>
+            </div>
         </div>
     </header>
     <nav>
         <div class="navMenu">
-            <div><a href="../index.html">Início</a><span>|</span></div>
-            <div><a href="../pages/projetos.html">Projetos</a><span>|</span></div>
-            <div><a href="https://github.com">Cursos</a><span>|</span></div>
-            <div><a href="../pages/podcast.html">Podcast</a><span>|</span></div>
-            <div><a href="../pages/quemSomos.html">Quem Somos</a><span>|</span></div>
-            <div><a href="../pages/contato.html">Fale Conosco</a></div>
+            <div><a href="../index.html">Início</a>                 <span>|</span></div>
+            <div><a href="../pages/projetos.html">Projetos</a>      <span>|</span></div>
+            <div><a href="https://github.com">Cursos</a>            <span>|</span></div>
+            <div><a href="../pages/podcast.html">Podcast</a>        <span>|</span></div>
+            <div><a href="../pages/quemSomos.html">Quem somos</a>   <span>|</span></div>
+            <div><a href="../pages/contato.html">Fale conosco</a>   </div>
         </div>
     </nav>
     <main>
@@ -61,6 +80,7 @@
         </div>
     </footer>
     <script src="../js/carousel.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 
 </html>

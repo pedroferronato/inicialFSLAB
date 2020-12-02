@@ -8,14 +8,33 @@
     <link rel="stylesheet" href="../css/contato.css">
     <link rel="stylesheet" href="../css/base.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" href="../src/Logotipo_IFET.ico">
 </head>
 
 <body>
+    <div id="menu">
+        <div class="barra">
+            <i onclick="abrirMenu()" class="material-icons">close</i>
+
+            <ul class="itensMenu">
+                <li class="itemMenu"><a href="../index.html">Início</a></li>
+                <li class="itemMenu"><a href="../pages/projetos.html">Projetos</a></li>
+                <li class="itemMenu"><a href="https://github.com">Cursos</a></li>
+                <li class="itemMenu"><a href="../pages/podcast.html">Podcast</a></li>
+                <li class="itemMenu"><a href="../pages/quemSomos.html">Quem somos</a></li>
+                <li class="itemMenu"><a href="../pages/contato.html">Fale conosco</a></li>
+            </ul>
+        </div>
+        <div onclick="abrirMenu()" class="fade"></div>
+    </div>
     <header>
         <div class="headerContent">
-            <h1>FSLab</h1>
-            <h3>Laboratório de Fábricas de Software</h3>
+            <i onclick="abrirMenu()" class="material-icons">menu</i>
+            <div class="fslab">
+                <h1>FSLab</h1>
+                <h3>Laboratório de Fábricas de Software</h3>
+            </div>
         </div>
     </header>
     <nav>
@@ -53,6 +72,8 @@
             <p>BR 174 S/N, Zona Urbana, Vilhena - RO <br> (69) 2101-0000</p>
         </div>
     </footer>
+
+    <script src="../js/menu.js"></script>
 </body>
 
 </html>

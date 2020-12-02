@@ -36,6 +36,8 @@ header {
     padding-left: 40px;
     margin-left: auto;
     margin-right: auto;
+
+    display: flex;
 }
 
 @media (max-width: 1280px){
@@ -148,6 +150,118 @@ footer p {
     font-size: 16px;
     padding: 12px 48px;
     border-radius: 5px;
+}
+
+#menu {
+    display: none;
+}
+
+.headerContent i {
+    color: white;
+    font-size: 48px;
+
+    padding-top: 12px;
+    margin-right: 24px;
+
+    cursor: pointer;
+
+    display: none;
+
+}
+
+@media (max-width: 600px) {
+    .headerContent h1 {
+        font-size: 48px;
+        line-height: 64px;
+    }
+
+    .headerContent h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .headerContent i {
+        display: block;
+    }
+
+    .headerContent {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .barra {
+        position: fixed;
+
+        padding: 16px;
+
+        max-width: 67%;
+        width: 100%;
+        height: 100%;
+
+        left: 0;
+        top: 0;
+
+        z-index: 1;
+
+        color: white;
+        background-color: #00420C;
+    }
+
+    .barra i {
+        font-size: 32px;
+    }
+    
+    .barra ul {
+        list-style: none;
+
+        margin: 16px auto 0px auto;
+
+        text-align: center;
+    }
+
+    .barra li {
+        padding: 16px 0px;
+        margin: 0 auto;
+
+        font-size: 20px;
+
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    
+    .barra li:last-child {
+        border-bottom: 2px solid white;
+    }
+
+    .barra li:first-child {
+        border-top: 2px solid white;
+    }
+
+    .barra a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .fade {
+        position: fixed;
+
+        width: 33%;
+        height: 100%;
+
+        right: 0;
+        top: 0;
+
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 @media (max-width: 800px) {
