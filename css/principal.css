@@ -156,6 +156,10 @@ strong {
         display: none;
     }
 
+    #ulMenu {
+        display: block;
+    }
+
     #cursoDesktop {
         display: none;
     }
