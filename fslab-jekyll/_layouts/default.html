@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fábrica de Software IFRO</title>
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ page.estilo }}">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ page.secundario }}">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ page.terceiro }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand' >
+        <link rel="shortcut icon" href="{{ site.baseurl }}/src/IFRO.ico">
+    </head>
+
+<body>
+
+    {% include menu.html %}
+
+    {% include header.html %}
+
+    {% include nav.html %}
+
+    <main>
+
+    {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
+    <script src="{{ site.baseurl }}/js/menu.js"></script>
+    {% if page.carousel == "true" %}
+        <script src="{{ site.baseurl }}/js/carousel.js"></script>
+    {% endif %}
+    
+</body>
+
+</html>

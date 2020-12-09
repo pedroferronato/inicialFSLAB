@@ -1,0 +1,28 @@
+---
+layout: default
+estilo: "base.css"
+secundario: "quemSomos.css"
+carousel: "true"
+---
+
+<div class="breadcrumb">
+    <a href="./index.html">Início</a>
+    <a href="./quemSomos.html"> > Quem somos</a>
+</div>
+<p class="titulo">Quem somos</p>
+<p class="descricaoQuemSomos">
+    A FSlab - Laboratório de Fábrica de Software, criada no Campus Vilhena, no ano de 2019, desenvolvida pelos
+    professores, Marco Antonio, Gilberto da Silva e Flavio Lico, juntamente com a turma de 2019, desenvolveram
+    os primeiros projetos desta iniciativa, tanto produtos direcionados ao IFRO, quanto projetos com entidades
+    externas, como a UNESC Vilhena, no projeto Dashboard para estações meteorológicas, em 2020, a FSLab segue
+    com projetos, alguns projetos para o IFRO, como o desenvolvimento deste site e desenvolvimento da
+    plataformas de eventos para, inicialmente, o IFRO, mas também já extendo suas atividades para além do
+    campus, como no projeto de desenvolvimento do site da Fundação Cultural de Vilhena.
+</p>
+<div id="carousel">
+    <div id="items">
+        {% for imagem in site.categories.carousel %}
+            <div class="item"><img src="{{ imagem.src }}" alt="{{ imagem.title }}"/></div>
+        {% endfor %}
+    </div>
+</div>

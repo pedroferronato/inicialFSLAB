@@ -1,0 +1,188 @@
+.descricao {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 32px auto 0 auto;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#carousel {
+    margin-top: 120px;
+}
+
+.tituloSecundario {
+    margin-left: 10px;
+    margin-bottom: 32px;
+
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.recursos {
+    margin-top: 120px;
+    margin-left: 10px;
+}
+
+.recItem {
+    display: flex;
+    align-items: center;
+}
+
+.recItem img {
+    width: 64px;
+    height: 64px;
+}
+
+
+.recItem p {
+    margin-left: 4px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.recursosItens {
+    display: flex;
+}
+
+.recursosItens a:not(:first-child) {
+    margin-left: 40px;
+}
+
+.descEsq {
+    min-height: 275px; 
+    width: 100%;
+    max-width: 50%; 
+    padding-right: 48px;
+    border-right: 1px solid rgba(0, 66, 12, 0.55);
+}
+
+.texto {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+
+.tituloProjeto {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.descDir {
+    min-height: 275px; 
+    width: 100%;
+    max-width: 50%; 
+    padding-left: 48px;
+    border-left: 1px solid rgba(0, 66, 12, 0.55);
+}
+
+.grupo {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.fabrica img {
+    width: 84px;
+    height: 84px;
+}
+
+.fabrica {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipe {
+    max-width: 100%;
+
+    display: flex;
+}
+
+.aluno {
+    width: 50%;
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.nome {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.funcao {
+    font-size: 16px;
+}
+
+.aluno img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 3px #2F9E41;
+}
+
+.descAluno {
+    margin-left: 24px;
+}
+
+.recursosItens a{
+    display: block;
+}
+
+@media (max-width: 1023px) {
+    .descricao {
+        display: block;
+    }
+
+    .descDir {
+        border-left: none;
+        min-height: 0px; 
+        width: 100%;
+        max-width: 100%; 
+        padding-left: 0px;
+        margin-top: 32px;
+    }
+
+    .descEsq {
+        border-right: none;
+        min-height: 0px; 
+        width: 100%;
+        max-width: 100%; 
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 720px) {
+    .recursosItens {
+        display: block;
+    }
+
+    .recursosItens a:not(:first-child) {
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+
+    .equipe {
+        display: block;
+    }
+    
+    .aluno {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .recursos {
+        margin-top: 32px;
+    }
+    
+    #carousel {
+        margin-top: 32px;
+    }
+}

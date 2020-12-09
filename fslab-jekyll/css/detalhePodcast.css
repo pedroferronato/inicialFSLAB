@@ -1,0 +1,182 @@
+.descricaoPodcast {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 100px auto 0 auto;
+    display: flex;
+}
+
+#carousel {
+    margin-top: 120px;
+}
+
+.titulo2 {
+    font-weight: 1000;
+    font-size: 28px;
+
+    color: #000000;
+
+    margin-top: 20px;
+    margin-bottom: 32px;
+    padding-bottom: 0;
+}
+
+.descEsquerda {
+    min-height: 275px; 
+    width: 100%;
+    max-width: 50%; 
+    padding-right: 48px;
+    border-right: 1px solid rgba(0, 66, 12, 0.55);
+}
+
+.texto {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+
+.descDireita {
+    min-height: 275px; 
+    width: 100%;
+    max-width: 50%; 
+    padding-left: 48px;
+    border-left: 1px solid rgba(0, 66, 12, 0.55);
+}
+
+.grupo {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.equipe {
+    max-width: 100%;
+
+    display: flex;
+}
+
+.nome {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.participante{
+    width: 50%;
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.participante img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 3px #2F9E41;
+}
+
+.descParticipante {
+    margin-left: 24px;
+}
+
+.wrap {
+    max-width: 1240px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.Subtitulo {
+    padding-bottom: 0px;
+}
+
+.recItens {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recItens img {
+    width: 40px;
+    height: 40px;
+}
+
+.recItens div:not(:first-child) {
+    margin-left: 40px;
+}
+
+#acompanhe {
+    margin-top: 100px;
+}
+
+@media (max-width: 1023px) {
+    .descricaoPodcast {
+        display: block;
+    }
+
+    .descDireita {
+        border: none;
+        padding: 0px;
+        margin-top: 32px;
+        max-width: 100%;
+        min-height: 0px;
+    }
+
+    .participante {
+        align-self: center;
+    }
+
+    .descEsquerda {
+        border: none;
+        max-width: 100%;
+        padding: 0px;
+        min-height: 0px; 
+    }
+}
+
+@media (max-width: 800px) {
+    .breadcrumb {
+        padding-bottom: 32px;
+    }
+
+    footer div {
+        padding-top: 120px;
+    }
+
+    .wrap {
+        margin-top: 32px;
+    }
+
+    #acompanhe {
+        margin-top: 0px;
+    }
+
+    .descricaoPodcast {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .equipe {
+        display: block;
+    }
+
+    .recItens {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 24px;
+    }
+
+    .recItens div:not(:first-child) {
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+
+    .recItens div:first-child {
+        margin: 0 auto;
+    }
+
+}

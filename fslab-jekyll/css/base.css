@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb, .titulo, .Subtitulo, .botaoVerde {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 40px;
+}
+
+body {
+    font-family: Quicksand;
+    padding-bottom: 100px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main, section {
+    max-width: 1240px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 216px;
+    background: radial-gradient(50% 50% at 50% 50%, #0A7B20 0%, #085f19 100%);
+}
+
+.headerContent {
+    max-width: 1240px;
+    padding-top: 80px;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+}
+
+@media (max-width: 1280px){
+    .headerContent {
+        padding-left: 20px;
+    }
+}
+
+h1, h3, .navMenu, main, footer {
+    max-width: 1240px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navMenu a {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    padding-right: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navMenu div {
+    display: inline-block;
+    height: 40px;
+}
+
+.navMenu span {
+    display: inline-block;
+    color: rgb(248, 248, 248);
+    padding-right: 4px;
+}
+
+h1, h3 {
+    color: rgb(248, 248, 248);
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+nav {
+    height: 40px;
+    background: #00420C;
+    box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.75);
+}
+
+.breadcrumb a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.breadcrumb {
+    padding-top: 24px;
+    padding-bottom: 80px;
+}
+
+.titulo {
+    font-weight: 1000;
+    font-size: 32px;
+
+    color: #000000;
+
+    margin-bottom: 8px;
+    padding-bottom: 0;
+}
+
+h4 {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+footer div {
+    padding-top: 240px;
+    padding-left: 20px;
+}
+
+footer img {
+    width: 100px;
+    height: 176px;
+    float: left;
+    margin-right: 24px;
+}
+
+footer p {
+    padding-top: 80px;
+}
+
+.botaoVerde {
+    background-color: #117A25;
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 48px;
+    border-radius: 5px;
+}
+
+#menu {
+    display: none;
+}
+
+.headerContent i {
+    color: white;
+    font-size: 48px;
+
+    padding-top: 12px;
+    margin-right: 24px;
+
+    cursor: pointer;
+
+    display: none;
+
+}
+
+@media (max-width: 600px) {
+    .headerContent h1 {
+        font-size: 48px;
+        line-height: 64px;
+    }
+
+    .headerContent h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .headerContent i {
+        display: block;
+    }
+
+    .headerContent {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .barra {
+        position: fixed;
+
+        padding: 16px;
+
+        max-width: 67%;
+        width: 100%;
+        height: 100%;
+
+        left: 0;
+        top: 0;
+
+        z-index: 1;
+
+        color: white;
+        background-color: #00420C;
+    }
+
+    .barra i {
+        font-size: 32px;
+    }
+    
+    .barra ul {
+        list-style: none;
+
+        margin: 16px auto 0px auto;
+
+        text-align: center;
+    }
+
+    .barra li {
+        padding: 16px 0px;
+        margin: 0 auto;
+
+        font-size: 20px;
+
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    
+    .barra li:last-child {
+        border-bottom: 2px solid white;
+    }
+
+    .barra li:first-child {
+        border-top: 2px solid white;
+    }
+
+    .barra a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .fade {
+        position: fixed;
+
+        width: 33%;
+        height: 100%;
+
+        right: 0;
+        top: 0;
+
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media (max-width: 800px) {
+    .breadcrumb {
+        padding-bottom: 0px;
+    }
+
+    footer div {
+        padding-top: 120px;
+    }
+
+    .titulo {
+        margin-top: 32px;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábrica de Software IFRO</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/detalhePodcast.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/src/IFRO.ico">
+</head>
+
+<body>
+
+    {% include menu.html %}
+
+    {% include header.html %}
+
+    {% include nav.html %}
+
+    <main>
+
+        <div class="breadcrumb">
+            <a href="{{ site.baseurl }}/index.html">Início</a>
+            <a href="{{ site.baseurl }}/podcast.html"> > Podcast</a>
+            <a href="{{ page.url }}"> > Podcast - #{{ page.numero }} {{ page.title }}</a>
+        </div>
+
+        <p class="titulo">Podcast - #{{ page.numero }} {{ page.title }}</p>
+        <p class="Subtitulo">10/06/2020</p>
+
+        <div class="wrap">
+
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                src="{{ page.iframesrc }}"></iframe>
+            <div
+                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                <a href="{{ page.soundref }}" title="{{ page.soundchannel }}" target="_blank"
+                    style="color: #cccccc; text-decoration: none;">{{ page.soundchannel }}</a> · <a
+                    href="{{ page.asrc }}" title="{{ page.title }}" target="_blank"
+                    style="color: #cccccc; text-decoration: none;">{{ page.title }}</a></div>
+
+        </div>
+
+        <div class="descricaoPodcast">
+            <div class="descEsquerda">
+                <p class="titulo2">Assunto do dia:</p>
+                <p class="texto">{{ page.descricao }}
+                </p>
+            </div>
+            <div class="descDireita">
+                <p class="titulo2">Participantes</p>
+                 
+                {% for linhaMembros in page.membros %}
+                <div class="equipe">
+                    <div class="participante">
+                        <img src="{{ linhaMembros.src1 }}">
+                        <div class="descParticipante">
+                            <p class="nome">{{ linhaMembros.membro1 }}</p>
+                        </div>
+                    </div>
+                    <div class="participante">
+                        <img src="{{ linhaMembros.src2 }}">
+                        <div class="descParticipante">
+                            <p class="nome">{{ linhaMembros.membro2 }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div class="wrap" id="acompanhe">
+            <p class="titulo2">Acompanhe em:</p>
+
+            <div class="recItens">
+                {% for link in page.links %}
+                    <div><a href="{{ link.link }}"><img src="{{ site.baseurl }}/src/{{ link.logoLink }}"></a></div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </main>
+
+    {% include footer.html %}
+
+    <script src="{{ site.baseurl }}/js/menu.js"></script>
+    <script src="{{ site.baseurl }}/js/carousel.js"></script>
+
+</body>
+
+</html>

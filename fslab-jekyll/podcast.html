@@ -1,0 +1,53 @@
+---
+layout: default
+estilo: "base.css"
+secundario: "grid.css"
+terceiro: "podcast.css"
+carousel: "f"
+---
+
+<div class="breadcrumb">
+    <a href="./index.html">Início</a>
+    <a href="./podcast.html"> > Podcast</a>
+</div>
+
+<div class="topoBusca">
+
+    <div>
+        <p class="titulo">Podcast</p>
+        {% assign total = 0 %}
+        {% for projeto in site.categories.podcasts %}
+            {% assign total = total | plus: 1 %}
+        {% endfor %}
+        <p class="Subtitulo">{{ total }} Podcast encontrados</p>
+        
+    </div>
+    <div class="campoBusca">
+        <input type="text" placeholder="Buscar">
+        <i class="material-icons">search</i>
+    </div>
+
+</div>
+
+<section class="grid4">
+    {% for podcast in site.categories.podcasts %}
+    <div class="card">
+        <a href="{{ podcast.url }}">
+            <div class="imgdivs">
+                <div class="numEp">
+                    <p>#{{ podcast.numero }}</p>
+                </div>
+                <div class="tituloEp">
+                    <p>{{ podcast.titleshort }}</p>
+                </div>
+            </div>
+            <img class="podimg" src="{{ site.baseurl }}/src/{{ podcast.imgsrc }}">
+            <div class="infos">
+                <p>{{ podcast.data }}</p>
+                <strong>Episódio #{{ podcast.numero }} - {{ podcast.title }}</strong>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+
+</section>

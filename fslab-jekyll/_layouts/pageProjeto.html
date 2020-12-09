@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábrica de Software IFRO</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/detalheProjeto.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/quemSomos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/src/IFRO.ico">
+</head>
+
+<body>
+
+    {% include menu.html %}
+
+    {% include header.html %}
+
+    {% include nav.html %}
+
+    <main>
+
+        <div class="breadcrumb">
+            <a href="{{ site.baseurl }}/index.html">Início</a>
+            <a href="{{ site.baseurl }}/projetos.html"> > Projetos</a>
+            <a href="{{ page.url }}"> > {{ page.title }}</a>
+        </div>
+
+        <div class="descricao">
+            <div class="descEsq">
+                <p class="tituloProjeto">{{ page.title }}</p>
+                <p class="texto">{{ page.descricao }}</p>
+            </div>
+            <div class="descDir">
+                <div class="fabrica">
+                    <div>
+                        <p class="tituloProjeto">Equipe</p>
+                        <p class="grupo">{{ page.equipe }}</p>
+                    </div>
+                    <img src="{{ site.baseurl }}/src/{{ page.logo }}">
+                </div>
+                
+                {% for linhaMebros in page.membros %}
+                <div class="equipe">
+                    <div class="aluno">
+                        <img src="{{ linhaMebros.src1 }}">
+                        <div class="descAluno">
+                            <p class="nome">{{ linhaMebros.membro1 }}</p>
+                            <p class="funcao">{{ linhaMebros.funcao1 }}</p>
+                        </div>
+                    </div>
+                    <div class="aluno">
+                        <img src="{{ linhaMebros.src2 }}">
+                        <div class="descAluno">
+                            <p class="nome">{{ linhaMebros.membro2 }}</p>
+                            <p class="funcao">{{ linhaMebros.funcao2 }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="carousel">
+            <p class="tituloSecundario">Screenshots</p>
+            <div id="items">
+                {% for img in page.fotos %}
+                <div class="item"><img src="{{ img }}" /></div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="recursos">
+            <p class="tituloSecundario">Recursos</p>
+            <div class="recursosItens">
+
+                {% for recurso in page.links %}
+                    <a href="{{ recurso.link }}">
+                        <div class="recItem">
+                            <img src="{{ site.baseurl }}/src/{{ recurso.logoLink }}">
+                            <p>{{ recurso.flavor }}</p>
+                        </div>
+                    </a>
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </main>
+
+    {% include footer.html %}
+
+    <script src="{{ site.baseurl }}/js/menu.js"></script>
+    <script src="{{ site.baseurl }}/js/carousel.js"></script>
+
+</body>
+
+</html>
