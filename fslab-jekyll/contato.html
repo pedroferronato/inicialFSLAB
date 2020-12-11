@@ -3,6 +3,7 @@ layout: default
 estilo: "contato.css"
 secundario: "base.css"
 carousel: "f"
+email: "true"
 ---
 
 <div class="breadcrumb">
@@ -16,7 +17,7 @@ carousel: "f"
         <input type="text" name="nome" id="nome" placeholder="Nome:">
         <input type="email" name="email" id="email" placeholder="E-mail:">
         <input type="text" name="telefone" id="telefone" placeholder="Telefone:">
-        <textarea name="descricao" id="deescricao" cols="30" rows="10" placeholder="Descrição da demanda:"></textarea>
+        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Descrição da demanda:"></textarea>
     </form>
-    <a href="#" id="enviar">Enviar</a>
+    <a onclick="coletarDados()" id="enviar">Enviar</a>
 </div>

@@ -3,13 +3,18 @@ layout: default
 estilo: "base.css"
 secundario: "principal.css"
 carousel: "false"
+email: "f"
 ---
 
 <div class="breadcrumb">
     <a href="./index.html">Início</a>
 </div>
 <p class="titulo">Projetos</p>
-<p class="Subtitulo">Mais de 20 projetos desenvolvidos</p>
+{% assign total = 0 %}
+{% for projeto in site.categories.projetos %}
+{% assign total = total | plus: 1 %}
+{% endfor %}
+<p class="Subtitulo">{{ total }} projetos desenvolvidos</p>
 
 <div class="wrap">
     <div class="row">
